@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 20px;
+  color: #777777;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.quantity a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.quantity a:hover {
+  background-color: #0d8bf2;
+}
+
+.quantity a.quantity-minus {
+  margin-right: 10px;
+}
+
+.quantity a.quantity-plus {
+  margin-left: 10px;
+}
+
+.quantity-input {
+  width: 60px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #2196f3;
+  border-radius: 4px;
+  padding: 4px;
+  outline: none;
+}
+
+/* Remove the arrow from input type number */
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-input:focus {
+  border-color: #0d8bf2;
+}
+
